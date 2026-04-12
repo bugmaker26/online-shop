@@ -19,7 +19,9 @@ git pull origin main
 # Sau khi sửa xong, chạy các lệnh:
 *******************************************************
 git add .
+
 git commit -m "Mo ta noi dung da sua"
+
 git push origin main
 *******************************************************
 # 5. Quy tắc
