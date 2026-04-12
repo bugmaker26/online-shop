@@ -13,16 +13,16 @@ git clone https://github.com/bugmaker26/online-shop.git
 # Bước 3: Đồng bộ code trước khi làm
 Trước khi bắt đầu chỉnh sửa, cần lấy phiên bản mới nhất từ GitHub:
 *******************************************************
-git pull origin main
+**git pull origin main**
 *******************************************************
 # Bước 4: Chỉnh sửa phần được phân công
 # Sau khi sửa xong, chạy các lệnh:
 *******************************************************
-git add .
+**git add .**
 
-git commit -m "Mo ta noi dung da sua"
+**git commit -m "Mo ta noi dung da sua"**
 
-git push origin main
+**git push origin main**
 *******************************************************
 # 5. Quy tắc
 - luôn pull trước khi sửa code
@@ -31,8 +31,10 @@ git push origin main
 - push thường xuyên để tránh dồn nhiều thay đổi
 - không upload file rác hoặc file cá nhân lên repository
 # 6. File không nên đưa lên GitHub
-# Các file/thư mục nên bỏ qua:
-.vscode/
+.vscode/ 
+
 .DS_Store
+
 __MACOSX/
+
 ._*
