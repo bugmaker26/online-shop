@@ -1,0 +1,120 @@
+.bg-inf {
+    background-color: rgb(22, 32, 43);
+}
+
+.bg-menu {
+    background-color: rgb(22, 32, 43);
+}
+
+.bg-banner {
+    background-color: rgb(36, 47, 62);
+}
+
+.nav-link.hover:hover {
+    color: #ff4d4d !important;
+    transition: 0.3s;
+}
+
+.nav-link {
+    padding: 10px 15px;
+}
+
+.form-control {
+    border-radius: 0;
+    border: none;
+}
+
+.btn-danger {
+    border-radius: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.category-menu {
+    border: 1px solid rgb(203, 201, 201);
+}
+
+.menu-header {
+    background-color: #e31e24;
+    color: white;
+    padding: 12px;
+}
+
+.menu-list {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list.nav-link a {
+    border-bottom: 1px solid rgb(203, 201, 201);
+    padding: 12px 15px;
+    color: black;
+}
+.menu-list.nav-link .active {
+    color: #e31e24;
+}
+
+.menu-list a:hover {
+    color: #e31e24;
+}
+
+.content {
+    border-right: 1px solid rgb(203, 201, 201);
+}
+
+.content p {
+    color: gray;
+}
+
+.content h6 {
+    font-weight: bold;
+}
+
+.content i {
+    margin-top: 5px;
+    font-size: 30px;
+    color: #e31e24;
+}
+
+.footer {
+    color: white;
+}
+
+.pay i {
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 40px;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+}
+
+.footer h6 {
+    text-transform: uppercase;
+}
+
+.list-unstyled .nav-link,
+.list-fanpages .nav-link {
+    color: white;
+}
+
+.list-unstyled .nav-link:hover,
+.list-fanpages .nav-link:hover {
+    color: red !important;
+}
+
+.list-fanpages i {
+    font-size: 30px;
+}
+
+.text-header {
+    color: #e31e24;
+    border-bottom: 1px solid rgb(203, 201, 201);
+}
+.card-text {
+    color: #e31e24;
+    font-weight: bold;
+}
