@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            overflow: auto;
+        }
+
+        .main {
+            height: 100%;
+        }
+
+
+        .middle-box {
+            overflow-y: auto;
+            height: 1000px;
+
+        }
+
+        .side-left,
+        .side-right {
+            position: sticky;
+            top: 0;
+            height: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header ">
+        <div class="container-fluid bg-inf">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white ps-0" href="#">
+                                    <span class="text-danger fw-bold">Email:</span> sieuthisport@gmail.com
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">
+                                    <span class="text-danger fw-bold">Hotline:</span> 0795082283
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link hover text-white" href="#">Đăng nhập</a></li>
+                            <li class="nav-item"><a class="nav-link hover text-white" href="#">Đăng ký</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link hover text-white" href="#">
+                                    <i class="fa-solid fa-heart"></i> Yêu thích
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hover text-white pe-0" href="#">
+                                    <i class="fa-solid fa-cart-arrow-down"></i><sup>0</sup>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-banner  py-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-start"> <img src="../IMG/Logo.png" alt="Logo" width="200px">
+                    </div>
+                    <div class="col-md-8">
+                        <form class="d-flex w-75 ms-auto"> <input class="form-control rounded-0" type="text"
+                                placeholder="Search" />
+                            <button class="btn btn-danger rounded-0" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-banner ">
+            <div class="container text-center">
+                <div class="bg-menu p-3">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link hover text-white fw-bold ps-0" href="#">THƯƠNG HIỆU <i
+                                    class="fa-solid fa-chevron-down ms-1" style="font-size: 10px;"></i></a></li>
+                        <li class="nav-item"><a class="nav-link hover text-white fw-bold" href="../HTML/home.html">TRANG
+                                CHỦ</a></li>
+                        <li class="nav-item"><a class="nav-link hover text-danger fw-bold" href="#">>Thể Hình & Gym</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid main ">
+        <div class=" row align-items-start">
+            <div class="col-3 p-0 side-left">
+                <ul class="list-group border-rounded-0">
+                    <li class="list-group-item d-flex justify-content-between align-items-center nav-item">
+                        <a class="nav-link text-center fs-2 white " onclick="showDanTa(event)"><img
+                                src="../IMG/treadmill.png" alt="" class="col-2">Dàn tạ</a>
+                        <span class="badge bg-primary rounded-pill">12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center nav-item">
+                        <a class="nav-link text-center fs-2 white" onclick="showGheTapBung(event)"><img
+                                src="../IMG/fitness-bench.png" alt="" class="col-2">Ghế tập bụng</a>
+                        <span class="badge bg-primary rounded-pill">12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center nav-item">
+                        <a class="nav-link text-center fs-2 white" onclick="showTaTay(event)"><img
+                                src="../IMG/muscle.png" alt="" class="col-2">Tạ tay</a>
+                        <span class="badge bg-primary rounded-pill">12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center nav-item">
+                        <a class="nav-link text-center fs-2 white" onclick="showDungCuTapTay(event)"><img
+                                src="../IMG/muscles.png" alt="" class="col-2">Dụng cụ tập tay</a>
+                        <span class="badge bg-primary rounded-pill">12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center nav-item">
+                        <a class="nav-link text-center fs-2 white" onclick="showTaDoi(event)"><img
+                                src="../IMG/dumbbell (1).png" alt="" class="col-2">Tạ đôi</a>
+                        <span class="badge bg-primary rounded-pill">12</span>
+                    </li>
+
+
+                </ul>
+                <div id="carouselId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                            aria-label="First slide"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="Fourth slide"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="4" aria-label="Five slide"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="5" aria-label="Sixth slide"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="6" aria-label="Seventh slide"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img height="400px" src="../IMG/IMG5.png" class="w-100 d-block" alt="First slide" />
+                        </div>
+                        <div class="carousel-item">
+                            <img height="400px" src="../IMG/IMG4.png" class="w-100 d-block" alt="Second slide" />
+                        </div>
+                        <div class="carousel-item">
+                            <img height="400px" src="../IMG/IMG5.png" class="w-100 d-block" alt="Third slide" />
+                        </div>
+                        <div class="carousel-item">
+                            <img height="400px" src="../IMG/IMG6.png" class="w-100 d-block" alt="Fourth slide" />
+                        </div>
+                        <div class="carousel-item">
+                            <img height="400px" src="../IMG/IMG7.png" class="w-100 d-block" alt="Fifth slide" />
+                        </div>
+                        <div class="carousel-item">
+                            <img height="400px" src="../IMG/IMG8.png" class="w-100 d-block" alt="Sixth slide" />
+                        </div>
+                        <div class="carousel-item">
+                            <img height="400px" src="../IMG/IMG2.jpg" class="w-100 d-block" alt="Seventh slide" />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="col-6 p-0  middle-box" style=" background-color: gainsboro;">
+                <div style="display: flex; justify-content: center; align-items: center; ">
+                    <h1 style=" color: rgb(207, 31, 31);  text-align: center;  font-weight: 800;">
+                        Vui lòng chọn sản phẩm muốn mua</h1>
+                </div>
+                <div id="showContent" class=" row"></div>
+            </div>
+            <div class="col-3 p-0 side-right">
+
+                <div id="accordion">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="btn" data-bs-toggle="collapse" href="#collapseOne">
+
+                                <h3 class="text-center font-weight-bold text-secondary">GYM GOOD FOR OUR HEALTH</h3>
+                            </div>
+                        </div>
+                        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <img width="100%" height="auto" src="../IMG/IMG.png" alt="">
+                                <h4 style="color: #13b390;">Cách bổ sung protein để cơ thể tăng cơ theo nghiên cứu mới
+                                    nhất</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class=" btn row" data-bs-toggle="collapse" href="#collapseTwo">
+                                <video width="100%" height="auto" controls>
+                                    <source src="../IMG/7708233867859.mp4" type="video/mp4">
+
+                                </video>
+
+
+
+                            </div>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                Lorem ipsum..
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                                <img width="100%" height="auto" src="../IMG/IMG2.jpg" alt="">
+                                <h4 style="color: #8c5311;">Bạn có thể gọi cho hotline:19001000</h4>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-banner footer">
+        <div class="container footer">
+            <div class="row">
+                <div class="col-3 mt-lg-4">
+                    <h6>THẢM TẬP YOGA - GIÀY PATIN - DỤNG CỤ TẬP GYM SIEUTHIDUNGCUTHETHAO.COM</h6>
+                    <p class="text-danger fw-bold">Bạn có thể thanh toán với:</p>
+                    <div class="pay d-flex mb-3">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <i class="fa-solid fa-right-left"></i>
+                        <i class="fa-solid fa-credit-card"></i>
+                        <i class="fa-brands fa-cc-visa"></i>
+                    </div>
+                    <div class="addr d-flex">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>11, Đường số 75, Phường Tân Phong, Quận 7, TP.HCM</p>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li><a class="nav-link d-flex hover" href="#"><i class="fa-solid fa-envelope"></i>
+                                <p>sieuthisport@gmail.com</p>
+                            </a></li>
+                        <li><a class="nav-link d-flex hover" href="#"><i class="fa-solid fa-phone"></i>
+                                <p>0906737699</p>
+                            </a></li>
+                        <li><a class="nav-link d-flex hover" href="#"><i class="fa-solid fa-clock"></i>
+                                <p>Làm việc: 8h00 - 18h00 (T2 - T7)</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-3 mt-lg-4">
+                    <h6>Hỗ trợ khách hàng</h6>
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chính sách đổi trả hàng hoá</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chính sách giao hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Phương thức thanh toán</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hướng dẫn mua hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chính sách bảo mật</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thoả thuận sử dụng</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-3 mt-lg-4">
+                    <h6>Đăng ký nhận tin & Chứng nhận</h6>
+                    <p>Đăng ký Email từ Shop hàng hiệu để nhận những thông tin mới nhất từ chúng tôi !</p>
+                    <form class="d-flex w-100 ms-auto"> <input class="form-control rounded-0" type="text"
+                            placeholder="Địa chỉ email..." />
+                        <button class="btn btn-danger rounded-0" type="submit">
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <h6 class="mt-4">CHỨNG NHẬN SGD TMĐT</h6>
+                    <img src="../IMG/logo-dang-ky-bo-cong-thuong.png" alt="" width="200px">
+                </div>
+                <div class="col-3 mt-lg-4">
+                    <h6>Fanpages</h6>
+                    <ul class="nav list-fanpages justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-x-twitter"></i></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const listCard_DanTa = [
+
+            {
+                name: "Dàn tạ 1",
+                price: 2000000,
+                IMG: "../IMG/treadmill.png"
+            },
+            {
+                name: "Dàn tạ 2",
+                price: 3000000,
+                IMG: "../IMG/treadmill.png"
+            },
+            {
+                name: "Dàn tạ 3",
+                price: 4000000,
+                IMG: "../IMG/treadmill.png"
+            },
+            {
+                name: "Dàn tạ 4",
+                price: 5000000,
+                IMG: "../IMG/treadmill.png"
+            },
+            {
+                name: "Dàn tạ 5",
+                price: 6000000,
+                IMG: "../IMG/treadmill.png"
+            },
+            {
+                name: "Dàn tạ 6",
+                price: 7000000,
+                IMG: "../IMG/treadmill.png"
+            },
+
+        ]
+        const listCard_GheTapBung = [
+
+            {
+                name: "Ghế tập bụng 1",
+                price: 2000000,
+                IMG: "../IMG/fitness-bench.png"
+            },
+            {
+                name: "Ghế tập bụng 2",
+                price: 3000000,
+                IMG: "../IMG/fitness-bench.png"
+            },
+            {
+                name: "Ghế tập bụng 3",
+                price: 4000000,
+                IMG: "../IMG/fitness-bench.png"
+            },
+            {
+                name: "Ghế tập bụng 4",
+                price: 5000000,
+                IMG: "../IMG/fitness-bench.png"
+
+            },
+            {
+                name: "Ghế tập bụng 5",
+                price: 6000000,
+                IMG: "../IMG/fitness-bench.png"
+
+            },
+            {
+                name: "Ghế tập bụng 6",
+                price: 7000000,
+                IMG: "../IMG/fitness-bench.png"
+
+            }
+
+        ]
+        const listCard_TaTay = [
+            {
+                name: "Tạ tay 1",
+                price: 100000,
+                IMG: "../IMG/muscle.png"
+            },
+            {
+                name: "Tạ tay 2",
+                price: 150000,
+                IMG: "../IMG/muscle.png"
+            },
+            {
+                name: "Tạ tay 3",
+                price: 200000,
+                IMG: "../IMG/muscle.png"
+
+            },
+            {
+                name: "Tạ tay 4",
+                price: 250000,
+                IMG: "../IMG/muscle.png"
+
+            },
+            {
+                name: "Tạ tay 5",
+                price: 300000,
+                IMG: "../IMG/muscle.png"
+
+            },
+            {
+                name: "Tạ tay 6",
+                price: 350000,
+                IMG: "../IMG/muscle.png"
+
+            }
+        ];
+        const listCard_DungCuTapTay = [
+            {
+                name: "Dụng cụ tập tay 1",
+                price: 500000,
+                IMG: "../IMG/muscles.png"
+            },
+            {
+                name: "Dụng cụ tập tay 2",
+                price: 550000,
+                IMG: "../IMG/muscles.png"
+            },
+            {
+                name: "Dụng cụ tập tay 3",
+                price: 600000,
+                IMG: "../IMG/muscles.png"
+
+            },
+            {
+                name: "Dụng cụ tập tay 4",
+                price: 650000,
+                IMG: "../IMG/muscles.png"
+
+            },
+            {
+                name: "Dụng cụ tập tay 5",
+                price: 700000,
+                IMG: "../IMG/muscles.png"
+
+            },
+            {
+                name: "Dụng cụ tập tay 6",
+                price: 750000,
+                IMG: "../IMG/muscles.png"
+
+            }
+        ];
+        const listCard_TaDoi = [
+            {
+                name: "Tạ đôi 1",
+                price: 2000000,
+                IMG: "../IMG/dumbbell (1).png"
+            },
+            {
+                name: "Tạ đôi 2",
+                price: 3000000,
+                IMG: "../IMG/dumbbell (1).png"
+            },
+            {
+                name: "Tạ đôi 3",
+                price: 4000000,
+                IMG: "../IMG/dumbbell (1).png"
+            },
+            {
+                name: "Tạ đôi 4",
+                price: 5000000,
+                IMG: "../IMG/dumbbell (1).png"
+            },
+            {
+                name: "Tạ đôi 5",
+                price: 6000000,
+                IMG: "../IMG/dumbbell (1).png"
+            },
+            {
+                name: "Tạ đôi 6",
+                price: 7000000,
+                IMG: "../IMG/dumbbell (1).png"
+            },
+            {
+                name: "Tạ đôi 7",
+                price: 8000000,
+                IMG: "../IMG/dumbbell (1).png"
+            },
+            {
+                name: "Tạ đôi 8",
+                price: 9000000,
+                IMG: "../IMG/dumbbell (1).png"
+            }
+        ]
+
+        function showDanTa(event) {
+            event.preventDefault();
+            let html = "";
+            listCard_DanTa.forEach((item) => {
+                html += `
+                <div class="col-6 yyyp-2 col">
+                <div class="card" >
+  <img class="card-img-top" src="${item.IMG}" alt="Card IMG">
+  <div class="card-body">
+    <h4 class="card-title">${item.name}</h4>
+    <p class="card-text">${item.price} VND</p>
+   <button class="btn btn-primary">Mua ngay</button>
+  </div>
+</div>
+                </div>
+        `;
+            });
+            document.getElementById("showContent").innerHTML = html;
+        }
+        function showGheTapBung(event) {
+            event.preventDefault();
+            let html = "";
+            listCard_GheTapBung.forEach((item) => {
+                html += `
+                <div class="col-6 yyyp-2 col">
+                <div class="card" >
+  <img class="card-img-top" src="${item.IMG}" alt="Card IMG">
+  <div class="card-body">
+    <h4 class="card-title">${item.name}</h4>
+    <p class="card-text">${item.price} VND</p>
+   <button class="btn btn-primary">Mua ngay</button>
+  </div>
+</div>
+                </div>`;
+            });
+            document.getElementById("showContent").innerHTML = html;
+        }
+        function showTaTay(event) {
+            event.preventDefault();
+            let html = "";
+            listCard_TaTay.forEach((item) => {
+                html += `
+                <div class="col-6 yyyp-2 col">
+                <div class="card" >
+  <img class="card-img-top" src="${item.IMG}" alt="Card IMG">
+  <div class="card-body">
+    <h4 class="card-title">${item.name}</h4>
+    <p class="card-text">${item.price} VND</p>
+   <button class="btn btn-primary">Mua ngay</button>
+  </div>
+</div>
+                </div>`;
+            });
+            document.getElementById("showContent").innerHTML = html;
+        }
+        function showDungCuTapTay(event) {
+            event.preventDefault();
+            let html = "";
+            listCard_DungCuTapTay.forEach((item) => {
+                html += `
+                <div class="col-6 yyyp-2 col">
+                <div class="card" >
+  <img class="card-img-top" src="${item.IMG}" alt="Card IMG">
+  <div class="card-body">
+    <h4 class="card-title">${item.name}</h4>
+    <p class="card-text">${item.price} VND</p>
+   <button class="btn btn-primary">Mua ngay</button>
+  </div>
+</div>
+                </div>`;
+            });
+            document.getElementById("showContent").innerHTML = html;
+        }
+        function showTaDoi(event) {
+            event.preventDefault();
+            let html = "";
+            listCard_TaDoi.forEach((item) => {
+                html += `
+                <div class="col-6 yyyp-2 col">
+                <div class="card" >
+  <img class="card-img-top" src="${item.IMG}" alt="Card IMG">
+  <div class="card-body">
+    <h4 class="card-title">${item.name}</h4>
+    <p class="card-text">${item.price} VND</p>
+   <button class="btn btn-primary">Mua ngay</button>
+  </div>
+</div>
+                </div>`;
+            });
+            document.getElementById("showContent").innerHTML = html;
+        }
+
+
+
+    </script>
+</body>
+
+</html>

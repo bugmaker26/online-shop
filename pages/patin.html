@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giày Patin & Phụ kiện - Siêu Thị Dụng Cụ Thể Thao</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* CSS bổ sung để căn chỉnh danh sách sản phẩm đẹp hơn */
+        .product-card {
+            margin-bottom: 20px;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .product-card .card-title {
+            font-size: 15px;
+            color: #333;
+        }
+        .product-card .card-title:hover {
+            color: #e31e24;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-inf">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white ps-0" href="#">
+                                <span class="text-danger fw-bold">Email:</span> sieuthisport@gmail.com
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <span class="text-danger fw-bold">Hotline:</span> 0795082283
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link hover text-white" href="#">Đăng nhập</a></li>
+                        <li class="nav-item"><a class="nav-link hover text-white" href="#">Đăng ký</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link hover text-white" href="#">
+                                <i class="fa-solid fa-heart"></i> Yêu thích
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover text-white pe-0" href="#">
+                                <i class="fa-solid fa-cart-arrow-down"></i><sup>0</sup>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-banner py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-start"> 
+                    <a href="../HTML/home.html"><img src="../IMG/Logo.png" alt="Logo" width="200px"></a>
+                </div>
+                <div class="col-md-8">
+                    <form class="d-flex w-75 ms-auto"> 
+                        <input class="form-control rounded-0" type="text" placeholder="Search" />
+                        <button class="btn btn-danger rounded-0" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-banner mb-4">
+        <div class="container text-center">
+            <div class="bg-menu p-3">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link hover text-white fw-bold ps-0" href="#">THƯƠNG HIỆU <i class="fa-solid fa-chevron-down ms-1" style="font-size: 10px;"></i></a></li>
+                    <li class="nav-item"><a class="nav-link hover text-white fw-bold" href="../HTML/home.html">TRANG CHỦ</a></li>
+                    <li class="nav-item"><a class="nav-link hover text-white fw-bold" href="#">HƯỚNG DẪN MUA HÀNG</a></li>
+                    <li class="nav-item"><a class="nav-link hover text-white fw-bold" href="#">LIÊN HỆ</a></li>
+                    <li class="nav-item"><a class="nav-link hover text-white fw-bold" href="#">TIN TỨC</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row align-items-start">
+            <div class="col-lg-3 col-md-4 category-menu p-0">
+                <div class="menu-header fw-bold text-uppercase">
+                    <i class="fa-solid fa-bars-staggered me-2"></i>DANH MỤC SẢN PHẨM
+                </div>
+                <ul class="menu-list nav flex-column nav-link">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/yoga.html">Yoga & Phụ kiện</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-bold" href="../HTML/patin.html">Giày Patin & Phụ kiện</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./maychaybo.html">Máy chạy bộ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./theHinh&Gym.html">Thể hình, Gym</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dctt.html">Dụng cụ thể thao</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="../HTML/spud.html">Sản phẩm ưu đãi </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./rebok-adidas.html">Reebok-Adidas</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-9 col-md-8 ps-md-4">
+                <h4 class="text-uppercase mb-4 mt-3 mt-md-0 pb-2 text-header">Giày Patin & Phụ Kiện</h4>
+                
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card product-card h-100">
+                            <img src="../IMG/F110H-DEN.webp" class="card-img-top" alt="Giày Patin 1" onerror="this.src='https://via.placeholder.com/300x300?text=Giay+Patin'">
+                            <div class="card-body d-flex flex-column text-center">
+                                <h6 class="card-title">Giày Patin Flying Eagle F110H</h6>
+                                <p class="card-text mt-auto mb-2">6.990.000₫</p>
+                                <button class="btn btn-outline-danger btn-sm w-100">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card product-card h-100">
+                            <img src="../IMG/E3-DEN.webp" class="card-img-top" alt="Giày Patin 2" onerror="this.src='https://via.placeholder.com/300x300?text=Giay+Patin'">
+                            <div class="card-body d-flex flex-column text-center">
+                                <h6 class="card-title">Giày Patin Flying Eagle RockVille E3</h6>
+                                <p class="card-text mt-auto mb-2">2.400.000₫</p>
+                                <button class="btn btn-outline-danger btn-sm w-100">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card product-card h-100">
+                            <img src="../IMG/a-5-scaled.webp" class="card-img-top" alt="Phụ kiện 1" onerror="this.src='https://via.placeholder.com/300x300?text=Phu+kien'">
+                            <div class="card-body d-flex flex-column text-center">
+                                <h6 class="card-title">Bộ bảo hộ patin Flying Eagle Valiant 3 màu</h6>
+                                <p class="card-text mt-auto mb-2">250.000₫</p>
+                                <button class="btn btn-outline-danger btn-sm w-100">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card product-card h-100">
+                            <img src="../IMG/K8S-24-scaled.webp" class="card-img-top" alt="Mũ bảo hiểm" onerror="this.src='https://via.placeholder.com/300x300?text=Mu+Bao+Hiem'">
+                            <div class="card-body d-flex flex-column text-center">
+                                <h6 class="card-title">Nón bảo hộ Calary k8S</h6>
+                                <p class="card-text mt-auto mb-2">350.000₫</p>
+                                <button class="btn btn-outline-danger btn-sm w-100">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card product-card h-100">
+                            <img src="../IMG/Cougar-MZS-303-600x600.webp" class="card-img-top" alt="Giày Patin 3" onerror="this.src='https://via.placeholder.com/300x300?text=Giay+Patin'">
+                            <div class="card-body d-flex flex-column text-center">
+                                <h6 class="card-title">Giày Patin Trẻ Em Cougar</h6>
+                                <p class="card-text mt-auto mb-2">1.500.000₫</p>
+                                <button class="btn btn-outline-danger btn-sm w-100">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card product-card h-100">
+                            <img src="../IMG/Flying-Eagle-F6S-Xanh.webp" class="card-img-top" alt="Giày Patin 4" onerror="this.src='https://via.placeholder.com/300x300?text=Giay+Patin'">
+                            <div class="card-body d-flex flex-column text-center">
+                                <h6 class="card-title">Giày Patin Flying Eagle F6S</h6>
+                                <p class="card-text mt-auto mb-2">3.200.000₫</p>
+                                <button class="btn btn-outline-danger btn-sm w-100">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card product-card h-100">
+                            <img src="../IMG/tui-centosy.webp" class="card-img-top" alt="Balo Patin" onerror="this.src='https://via.placeholder.com/300x300?text=Balo+Patin'">
+                            <div class="card-body d-flex flex-column text-center">
+                                <h6 class="card-title">Balo Đựng Giày Patin Chuyên Dụng</h6>
+                                <p class="card-text mt-auto mb-2">450.000₫</p>
+                                <button class="btn btn-outline-danger btn-sm w-100">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card product-card h-100">
+                            <img src="../IMG/FE-Sliders-10-600x600.webp" class="card-img-top" alt="Bánh xe" onerror="this.src='https://via.placeholder.com/300x300?text=Banh+Xe'">
+                            <div class="card-body d-flex flex-column text-center">
+                                <h6 class="card-title">Bánh Patin Flying Eagle Sliders</h6>
+                                <p class="card-text mt-auto mb-2">320.000₫</p>
+                                <button class="btn btn-outline-danger btn-sm w-100">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card product-card h-100">
+                            <img src="../IMG/chan.webp" class="card-img-top" alt="Giày Patin 5" onerror="this.src='https://via.placeholder.com/300x300?text=Giay+Patin'">
+                            <div class="card-body d-flex flex-column text-center">
+                                <h6 class="card-title">Chắn chống trầy giày patin Flying Eagle</h6>
+                                <p class="card-text mt-auto mb-2">75.000₫</p>
+                                <button class="btn btn-outline-danger btn-sm w-100">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card product-card h-100">
+                            <img src="../IMG/FRAME-FLYING-EAGLE-DRIFT.webp" class="card-img-top" alt="Tất trượt patin" onerror="this.src='https://via.placeholder.com/300x300?text=Tat+Patin'">
+                            <div class="card-body d-flex flex-column text-center">
+                                <h6 class="card-title">Frame Giày Patin Flying Eagle DRIFT</h6>
+                                <p class="card-text mt-auto mb-2">2.250.000₫</p>
+                                <button class="btn btn-outline-danger btn-sm w-100">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav aria-label="Page navigation" class="mt-4">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a class="page-link" href="#">Trước</a></li>
+                        <li class="page-item active"><a class="page-link bg-danger border-danger" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link text-danger" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link text-danger" href="#">Sau</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-banner">
+        <div class="container footer pt-4 pb-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <h6>THẢM TẬP YOGA - GIÀY PATIN - DỤNG CỤ TẬP GYM SIEUTHIDUNGCUTHETHAO.COM</h6>
+                    <p class="text-danger fw-bold mt-3">Bạn có thể thanh toán với:</p>
+                    <div class="pay d-flex mb-3">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <i class="fa-solid fa-right-left"></i>
+                        <i class="fa-solid fa-credit-card"></i>
+                        <i class="fa-brands fa-cc-visa"></i>
+                    </div>
+                    <div class="addr d-flex mt-3">
+                        <i class="fa-solid fa-location-dot me-2 text-danger"></i>
+                        <p>11, Đường số 75, Phường Tân Phong, Quận 7, TP.HCM</p>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li><a class="nav-link d-flex hover p-0 mb-2" href="#"><i class="fa-solid fa-envelope me-2 text-danger"></i>
+                                <p class="m-0">sieuthisport@gmail.com</p>
+                            </a></li>
+                        <li><a class="nav-link d-flex hover p-0 mb-2" href="#"><i class="fa-solid fa-phone me-2 text-danger"></i>
+                                <p class="m-0">0906737699</p>
+                            </a></li>
+                        <li><a class="nav-link d-flex hover p-0" href="#"><i class="fa-solid fa-clock me-2 text-danger"></i>
+                                <p class="m-0">Làm việc: 8h00 - 18h00 (T2 - T7)</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <h6>Hỗ trợ khách hàng</h6>
+                    <ul class="list-unstyled mt-3">
+                        <li class="nav-item mb-2"><a class="nav-link p-0 hover" href="#">Chính sách đổi trả hàng hoá</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 hover" href="#">Chính sách giao hàng</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 hover" href="#">Phương thức thanh toán</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 hover" href="#">Hướng dẫn mua hàng</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 hover" href="#">Chính sách bảo mật</a></li>
+                        <li class="nav-item"><a class="nav-link p-0 hover" href="#">Thoả thuận sử dụng</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <h6>Đăng ký nhận tin & Chứng nhận</h6>
+                    <p class="mt-3 text-secondary">Đăng ký Email từ Shop hàng hiệu để nhận những thông tin mới nhất từ chúng tôi !</p>
+                    <form class="d-flex w-100"> 
+                        <input class="form-control rounded-0" type="text" placeholder="Địa chỉ email..." />
+                        <button class="btn btn-danger rounded-0" type="submit">
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <h6 class="mt-4 mb-3">CHỨNG NHẬN SGD TMĐT</h6>
+                    <img src="../IMG/logo-dang-ky-bo-cong-thuong.png" alt="Bộ Công Thương" width="180px">
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3 text-md-center">
+                    <h6>Fanpages</h6>
+                    <ul class="nav list-fanpages justify-content-md-center mt-3">
+                        <li class="nav-item"><a class="nav-link p-2" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="nav-item"><a class="nav-link p-2" href="#"><i class="fa-brands fa-facebook-messenger"></i></a></li>
+                        <li class="nav-item"><a class="nav-link p-2" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li class="nav-item"><a class="nav-link p-2" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
